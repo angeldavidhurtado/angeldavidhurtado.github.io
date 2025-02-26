@@ -1,6 +1,5 @@
 :root {
 	--beige: #f1e3c4;
-	--beige-transparent: #f1e3c4d0;
 	--beige-brown: #cabca1;
 	--brown: #433126;
 	--blue-gradient: linear-gradient(to top right, #122f5a, #1b68c5);
@@ -138,6 +137,12 @@ h1 {
 	display: flex;
 	justify-content: center;
 	gap: 15px;
+}
+
+.hola svg {
+	width: 20px;
+	height: 20px;
+	fill: var(--beige-brown);
 }
 
 

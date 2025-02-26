@@ -2,6 +2,7 @@
 	--beige: #f1e3c4;
 	--beige-brown: #cabca1;
 	--brown: #433126;
+	--brown-transparent: #4331266c;
 	--blue-gradient: linear-gradient(to top right, #122f5a, #1b68c5);
 }
 
@@ -77,22 +78,16 @@ body::after {
 /* -- -- nav -- -- */
 
 .navegacion {
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 	position: sticky;
 	top: 0;
-	background: #43312633;
+	background: var(--brown-transparent);
+	backdrop-filter: blur(27px) brightness(.8);
 	box-shadow: 0 0 30px var(--brown);
-	/*
-	background: rgba(0, 0, 0, .3);
-	backdrop-filter: blur(27px) saturate(90%) sepia(10%);
-	backdrop-filter: brightness(.7);
-	backdrop-filter: contrast(.3);
-	*/
-	backdrop-filter: blur(27px);
 }
 
 .navegacion .elementos {
-	padding: 20px 0 20px 0;
+	padding: 15px 0 15px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -115,6 +110,32 @@ body::after {
 }
 .navegacion ol a:hover {
 	text-shadow: var(--beige) 0 0 10px;
+}
+
+.navegacion .lang {
+	font-family: "Playwrite NO";
+	font-size: 18px;
+	text-shadow: var(--beige) 0 0 10px;
+	user-select: none;
+}
+
+.navegacion .cv a,
+.navegacion .lang {
+	width: 74px;
+}
+.navegacion .cv a {
+	display: inline-block;
+	border: 1px solid var(--beige);
+	font-size: 15px;
+	padding: 5px 0;
+	text-align: center;
+	border-radius: 22px;
+	transition: all ease .3s;
+}
+.navegacion .cv a:hover {
+	background: var(--beige);
+	color: #433126;
+	font-weight: 500;
 }
 
 

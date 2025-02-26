@@ -76,8 +76,45 @@ body::after {
 
 /* -- -- nav -- -- */
 
-nav {
+.navegacion {
 	margin-bottom: 80px;
+	position: sticky;
+	top: 0;
+	background: #43312633;
+	box-shadow: 0 0 30px var(--brown);
+	/*
+	background: rgba(0, 0, 0, .3);
+	backdrop-filter: blur(27px) saturate(90%) sepia(10%);
+	backdrop-filter: brightness(.7);
+	backdrop-filter: contrast(.3);
+	*/
+	backdrop-filter: blur(27px);
+}
+
+.navegacion .elementos {
+	padding: 20px 0 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 860px;
+	margin: auto;
+}
+
+.navegacion ol {
+	display: flex;
+	gap: 24px;
+	list-style: none;
+}
+
+.navegacion a {
+	color: var(--beige);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 300;
+	transition: text-shadow ease .3s;
+}
+.navegacion ol a:hover {
+	text-shadow: var(--beige) 0 0 10px;
 }
 
 
@@ -128,8 +165,7 @@ h1 {
 .hola p {
 	margin: 15px 0 30px 0;
 	text-align: left;
-	position: relative;
-	left: 10px;
+	padding-left: 10px;
 }
 
 .hola ul {

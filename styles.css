@@ -148,6 +148,7 @@ body::after {
 	margin: auto;
 	width: 80%;
 	max-width: 767px;
+	min-width: 300px;
 	padding: 0 0 30px 0;
 	text-align: center;
 	background: var(--blue-gradient);
@@ -171,6 +172,8 @@ body::after {
 .foto-perfil img {
 	display: block;
 	border-radius: 50%;
+	width: 100%;
+	max-width: 156px;
 }
 
 h1 {

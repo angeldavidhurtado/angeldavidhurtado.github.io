@@ -146,9 +146,9 @@ body::after {
 
 .hola {
 	margin: auto;
-	width: 100%;
+	width: 80%;
 	max-width: 767px;
-	padding: 0 144px 30px 144px;
+	padding: 0 0 30px 0;
 	text-align: center;
 	background: var(--blue-gradient);
 	border: 8px solid var(--beige);
@@ -157,7 +157,7 @@ body::after {
 }
 
 .hola-padding {
-	padding: 102px 20px 0 20px;
+	padding-top: 102px;
 }
 
 .foto-perfil {
@@ -186,9 +186,11 @@ h1 {
 }
 
 .hola p {
-	margin: 15px 0 30px 0;
+	margin: 15px auto 30px auto;
 	text-align: left;
 	padding-left: 10px;
+	width: 70%;
+	max-width: 450px;
 }
 
 .hola ul {
@@ -533,19 +535,28 @@ h1 {
 
 /* -- -- responsive -- -- */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+	/* -- -- hola -- -- */
+	.hola {
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 750px) {
 	/* -- -- navegacion -- -- */
 	.navegacion nav {
-			display: none;
-	}
-	.navegacion .lang {
-		font-size: 20px;
+		display: none;
 	}
 	.navegacion .cv a {
-		font-size: 18px;
 		width: 100px;
 	}
 
 	/* -- -- hola -- -- */
-	
+	.hola h1 {
+		font-size: 28px;
+	}
+	.hola p {
+		width: 85%;
+		margin-bottom: 23px;
+	}
 }

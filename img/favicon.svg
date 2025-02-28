@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 4.233333 4.2333335"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient15147">
+      <stop
+         style="stop-color:#3b87e4;stop-opacity:1;"
+         offset="0"
+         id="stop15143" />
+      <stop
+         style="stop-color:#091330;stop-opacity:1;"
+         offset="1"
+         id="stop15145" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient15147"
+       id="linearGradient14"
+       x1="-189.05646"
+       y1="980.70422"
+       x2="-190.73688"
+       y2="982.38464"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.6699987,0,0,1.6699987,126.97522,-658.00397)" />
+  </defs>
+  <g
+     id="layer1"
+     transform="matrix(0.86666668,0,0,0.86666668,166.91504,-848.2341)"
+     style="stroke-width:0.915865;stroke-dasharray:none;paint-order:stroke fill markers">
+    <circle
+       style="fill:url(#linearGradient14);fill-opacity:1;stroke:#f1e3c4;stroke-width:0.915865;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path5"
+       cx="-190.15196"
+       cy="981.17395"
+       r="1.984375" />
+  </g>
+  <style
+     type="text/css"
+     id="style1256">
+	.st0{fill:#DD0031;}
+	.st1{fill:#C3002F;}
+	.st2{fill:#FFFFFF;}
+</style>
+</svg>

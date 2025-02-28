@@ -227,7 +227,7 @@ h1 {
 }
 
 .proyecto {
-	width: 100%;
+	width: 80%;
 	max-width: 860px;
 	margin: 0 auto 70px auto;
 	display: flex;
@@ -236,17 +236,22 @@ h1 {
 }
 
 .proyecto .detalles {
-	width: 500px;
+	padding-right: 20px;
 }
 
 .proyecto h3 {
 	font-size: 28px;
 	margin-bottom: 10px;
-	margin-left: 28px;
+}
+
+.proyecto h3 img {
+	width: 32px;
+	height: 32px;
+	margin: 0 15px -4px 0;
 }
 
 .proyecto .padding-left {
-	padding-left: 30px;
+	padding-left: 50px;
 }
 
 .proyecto ul {
@@ -260,6 +265,7 @@ h1 {
 	background: var(--blue-gradient);
 	padding: 5px 15px;
 	border-radius: 18px;
+	user-select: none;
 }
 
 .proyecto .enlaces a {
@@ -271,6 +277,8 @@ h1 {
 	padding: 5px 20px;
 	border-radius: 22px;
 	transition: all ease .3s;
+	margin-top: 10px;
+	user-select: none;
 }
 
 .proyecto .enlaces a:hover {
@@ -279,15 +287,15 @@ h1 {
 }
 
 .proyecto .preview img {
+	display: block;
 	border-radius: 15px;
 	border: 5px solid var(--beige);
 	box-shadow: var(--beige) 0 0 30px;
-	vertical-align: top;
 	margin-top: 68px;
 }
 
 .proyecto .tecnologias {
-	margin: 15px 0 15px -4px;
+	margin: 15px 0 5px -4px;
 }
 
 
@@ -550,6 +558,14 @@ h1 {
 	.hola {
 		width: 85%;
 	}
+
+	/* -- -- proyectos -- -- */
+	.proyecto {
+		flex-flow: column;
+	}
+	.proyecto .preview img {
+		margin: 0 auto 20px auto;
+	}
 }
 
 @media screen and (max-width: 750px) {
@@ -570,6 +586,3 @@ h1 {
 		margin-bottom: 23px;
 	}
 }
-
-
-

@@ -303,24 +303,31 @@ h1 {
 
 /* -- -- Educación -- -- */
 
+.educacion {
+	max-width: 600px;
+	width: fit-content;
+	margin: auto;
+	padding: 0 20px;
+}
+
 .educacion ol {
 	list-style: none;
-	width: 800px;
-	margin: auto;
 }
 
 .educacion .logo {
 	margin-right: 20px;
+	flex-shrink: 0;
+	display: flex;
+	flex-flow: column;
 }
 .educacion .logo::after {
 	content: "";
 	display: block;
 	position: relative;
 	width: 2px;
-	height: 10px;
 	background: var(--beige);
 	margin: auto;
-	height: 50px;
+	flex-grow: 1;
 }
 .educacion li:last-child .logo::after {
 	display: none;
@@ -341,6 +348,10 @@ h1 {
 .educacion li {
 	margin-top: -10px;
 	display: flex;
+}
+
+.educacion .text {
+	padding-bottom: 20px;
 }
 
 .educacion h3 {

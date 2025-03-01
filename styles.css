@@ -377,52 +377,30 @@ h1 {
 
 /* -- -- experiencia -- -- */
 
+.experiencia h2 {
+	padding: 0 20px;
+}
+
 .experiencia ol {
-	list-style: none;
-	width: 100%;
+	width: 80%;
 	max-width: 860px;
 	margin: auto;
+	list-style: none;
 }
 
-.experiencia > ol > li {
-	margin-bottom: 50px;
+.experiencia ol > li {
+	display: flex;
 }
 
-.experiencia h3 {
-	font-family: poppins;
-	text-shadow: none;
-	font-weight: 500;
-	font-size: 20px;
-}
-
-.experiencia h3 span {
-	font-size: 14px;
+.experiencia .fecha {
 	width: 140px;
-	display: inline-block;
-	position: relative;
-	bottom: 1px;
+	flex-shrink: 0;
+	font-size: 14px;
 	color: var(--beige-brown);
 }
 
-.experiencia .descripcion ul:first-child {
-	padding: 10px 0 0 164px;
-	list-style-type: disc;
-}
-.experiencia .descripcion li::marker {
-	font-size: 20px;
-}
-
-.experiencia .skills {
-	list-style: none;
-	display: flex;
-	gap: 7px;
-	padding-left: 140px;
-	margin-top: 18px;
-}
-.experiencia .skills li {
-	background: var(--brown);
-	padding: 5px 15px;
-	border-radius: 100px;
+.experiencia article {
+	flex-grow: 1;
 }
 
 

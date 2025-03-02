@@ -386,6 +386,9 @@ h1 {
 	max-width: 860px;
 	margin: auto;
 	list-style: none;
+	display: flex;
+	flex-flow: column;
+	gap: 50px;
 }
 
 .experiencia ol > li {
@@ -393,14 +396,45 @@ h1 {
 }
 
 .experiencia .fecha {
-	width: 140px;
+	width: 145px;
 	flex-shrink: 0;
 	font-size: 14px;
 	color: var(--beige-brown);
+	font-weight: 500;
+	margin-top: 6px;
 }
 
 .experiencia article {
 	flex-grow: 1;
+}
+
+.experiencia h3 {
+	font-family: poppins;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.experiencia ul:nth-child(2) {
+	list-style: disc;
+	padding: 10px 0 18px 19px;
+}
+
+.experiencia ul:nth-child(2) li::marker {
+	font-size: 20px;
+}
+
+.experiencia ul:last-child {
+	list-style: none;
+	margin-left: -5px;
+	display: flex;
+	gap: 7px;
+}
+
+.experiencia ul:last-child li {
+	background: var(--brown);
+	padding: 5px 15px;
+	border-radius: 18px;
+	user-select: none;
 }
 
 

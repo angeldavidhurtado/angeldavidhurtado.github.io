@@ -236,7 +236,7 @@ h1 {
 }
 
 .proyecto .detalles {
-	padding-right: 20px;
+	padding-right: 30px;
 }
 
 .proyecto h3 {
@@ -385,6 +385,7 @@ h1 {
 	width: 80%;
 	max-width: 860px;
 	margin: auto;
+	padding-right: 20px;
 	list-style: none;
 	display: flex;
 	flex-flow: column;
@@ -428,6 +429,7 @@ h1 {
 	margin-left: -5px;
 	display: flex;
 	gap: 7px;
+	flex-wrap: wrap;
 }
 
 .experiencia ul:last-child li {
@@ -589,6 +591,17 @@ h1 {
 	.proyecto .preview img {
 		margin: 0 auto 20px auto;
 	}
+
+	/* -- -- experiencia -- -- */
+	.experiencia ol > li {
+		flex-flow: column;
+	}
+	.experiencia .fecha {
+		margin: 0 0 13px 0;
+	}
+	.experiencia ol {
+		padding: 0 0 0 30px;
+	}
 }
 
 @media screen and (max-width: 750px) {
@@ -607,5 +620,10 @@ h1 {
 	.hola p {
 		width: 85%;
 		margin-bottom: 23px;
+	}
+
+	/* -- -- experiencia -- -- */
+	.experiencia ol {
+		padding: 0 0 0 5px;
 	}
 }

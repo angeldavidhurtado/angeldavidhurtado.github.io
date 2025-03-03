@@ -142,7 +142,7 @@ body::after {
 }
 .navegacion .cv a:hover {
 	background: var(--beige);
-	color: #433126;
+	color: var(--brown);
 	font-weight: 500;
 }
 
@@ -220,7 +220,6 @@ h1 {
 
 
 /* -- -- Proyectos -- -- */
-/* Sigue ajustar los h2 que queden bien los text-shadow */
 
 .proyectos {
 	max-width: 860px;
@@ -232,18 +231,73 @@ h1 {
 	list-style: none;
 	display: flex;
 	flex-flow: column;
-	gap: 50px;
+	gap: 70px;
 }
 
 .proyectos .proyecto {
-	display: flex;
-	flex-flow: row-reverse;
+	display: grid;
+	grid-template-columns: 47px 1fr 300px;
+	grid-template-areas:
+		'item-ico titulo .'
+		'. detalles preview';
 }
 
 .proyectos .preview {
-	max-width: 300px;
-	width: 100%;
-	flex-shrink: 0;
+	grid-area: preview;
+	justify-self: center;
+}
+.proyectos .item-ico {
+	grid-area: item-ico;
+}
+.proyectos .titulo {
+	grid-area: titulo;
+	font-size: 28px;
+}
+.proyectos .detalles {
+	grid-area: detalles;
+	padding: 10px 30px 0 3px;
+}
+
+.proyectos .item-ico img {
+	width: 32px;
+	margin-top: 11px;
+}
+
+.proyectos .preview img {
+	margin-top: 16px;
+	border-radius: 15px;
+	border: 5px solid var(--beige);
+	box-shadow: var(--beige) 0 0 30px;
+}
+
+.proyectos .tecnologias {
+	margin: 15px 0 5px -4px;
+	list-style: none;
+	display: flex;
+	gap: 10px;
+}
+.proyectos .tecnologias li {
+	padding: 5px 15px;
+	background: var(--blue-gradient);
+	border-radius: 18px;
+	user-select: none;
+}
+
+.proyectos .enlaces a {
+	text-decoration: none;
+	color: var(--beige);
+	font-size: 22px;
+	padding: 5px 20px;
+	border: 1px solid var(--beige);
+	display: inline-block;
+	user-select: none;
+	border-radius: 22px;
+	transition: all ease .3s;
+	margin-top: 10px;
+}
+.proyectos .enlaces a:hover {
+	background: var(--beige);
+	color: var(--brown);
 }
 
 

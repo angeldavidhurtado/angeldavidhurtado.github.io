@@ -590,14 +590,16 @@ h1 {
 	}
 
 	/* -- -- proyectos -- -- */
-	.proyecto {
-		flex-flow: column;
+	.proyectos .proyecto {
+		grid-template-columns: 47px 1fr;
+		grid-template-areas:
+			'preview preview'
+			'item-ico titulo'
+			'. detalles';
 	}
-	.proyecto .preview img {
-		margin: 0 auto 20px auto;
-		box-sizing: content-box;
-		max-width: 300px;
-		width: 100%;
+
+	.proyectos .preview img {
+		margin: 0 0 13px 0;
 	}
 
 	/* -- -- experiencia -- -- */
@@ -635,4 +637,3 @@ h1 {
 		padding: 0 0 0 5px;
 	}
 }
-

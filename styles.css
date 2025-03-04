@@ -155,8 +155,7 @@ body::after {
 	margin: auto;
 	width: 80%;
 	max-width: 767px;
-	min-width: 300px;
-	padding: 0 0 30px 0;
+	padding: 0 20px 30px 20px;
 	text-align: center;
 	background: var(--blue-gradient);
 	border: 8px solid var(--beige);
@@ -275,6 +274,7 @@ h1 {
 	list-style: none;
 	display: flex;
 	gap: 10px;
+	flex-wrap: wrap;
 }
 .proyectos .tecnologias li {
 	padding: 5px 15px;
@@ -294,6 +294,7 @@ h1 {
 	border-radius: 22px;
 	transition: all ease .3s;
 	margin-top: 10px;
+	text-align: center;
 }
 .proyectos .enlaces a:hover {
 	background: var(--beige);
@@ -466,7 +467,8 @@ h1 {
 }
 
 .referencias img {
-	width: 121px;
+	max-width: 121px;
+	width: 100%;
 	border-radius: 50%;
 }
 
@@ -597,9 +599,12 @@ h1 {
 			'item-ico titulo'
 			'. detalles';
 	}
-
 	.proyectos .preview img {
 		margin: 0 0 13px 0;
+		width: 100%;
+	}
+	.proyectos .detalles {
+		padding-right: 0;
 	}
 
 	/* -- -- experiencia -- -- */

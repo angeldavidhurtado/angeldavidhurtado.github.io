@@ -27,7 +27,7 @@ section > h2 {
 	text-align: center;
 	text-shadow: var(--beige) 0 0 10px;
 	font-size: 32px;
-	margin: 200px 0 50px 0;
+	margin: 50px 0 50px 0;
 }
 
 h3 {
@@ -99,7 +99,6 @@ hacia abajo
 /* -- -- nav -- -- */
 
 .navegacion {
-	margin-bottom: 60px;
 	position: sticky;
 	top: 0;
 	background: var(--brown-transparent);
@@ -183,7 +182,8 @@ hacia abajo
 }
 
 .hola-padding {
-	padding-top: 102px;
+	padding-top: calc(102px + 60px);
+	padding-bottom: 150px;
 }
 
 .foto-perfil {
@@ -479,10 +479,9 @@ h1 {
 
 .referencias ul {
 	list-style: none;
-}
-
-.referencias li {
-	margin-bottom: 80px;
+	display: flex;
+	flex-flow: column;
+	gap: 80px;
 }
 
 .referencias img {

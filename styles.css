@@ -26,8 +26,11 @@ section > h2 {
 	font-family: "Playwrite NO";
 	text-align: center;
 	text-shadow: var(--beige) 0 0 10px;
-	font-size: 32px;
-	margin: 50px 0 50px 0;
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+.content-background section:last-child > h2 {
+	margin-bottom: 0;
 }
 
 h3 {
@@ -41,6 +44,37 @@ h3 {
 img {
 	user-select: none;
 	pointer-events: none;
+}
+
+
+
+
+/* -- -- difuso -- -- */
+
+.difuso {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 65px;
+	margin-top: -65px;
+	background: var(--brown-transparent);
+	backdrop-filter: blur(27px) brightness(.8);
+	box-shadow: 0 0 30px var(--brown);
+}
+@supports not (
+	(backdrop-filter: blur(10px))
+	and
+	(backdrop-filter: brightness(.8))
+) {
+  .difuso {
+		background: #433126c0;
+	}
+}
+
+.content-background section > h2 {
+	position: sticky;
+	top: 0;
 }
 
 
@@ -68,7 +102,7 @@ hacia abajo
 .background {
 	position: sticky;
 	top: 0;
-	z-index: -3;
+	z-index: -1;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -82,7 +116,7 @@ hacia abajo
 	object-fit: cover;
 }
 
-.background::after {
+.background::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -101,15 +135,7 @@ hacia abajo
 .navegacion {
 	position: sticky;
 	top: 0;
-	background: var(--brown-transparent);
-	backdrop-filter: blur(27px) brightness(.8);
-	box-shadow: 0 0 30px var(--brown);
 	padding: 15px 40px;
-}
-@supports not (backdrop-filter: blur(10px)) {
-  .navegacion {
-		background: #433126c0;
-	}
 }
 
 .navegacion .elementos {
@@ -183,7 +209,7 @@ hacia abajo
 
 .hola-padding {
 	padding-top: calc(102px + 60px);
-	padding-bottom: 150px;
+	padding-bottom: 200px;
 }
 
 .foto-perfil {
@@ -250,6 +276,7 @@ h1 {
 	display: flex;
 	flex-flow: column;
 	gap: 70px;
+	padding: 20px 0 200px 0;
 }
 
 .proyectos .proyecto {
@@ -269,7 +296,7 @@ h1 {
 }
 .proyectos .titulo {
 	grid-area: titulo;
-	font-size: 28px;
+	font-size: 25px;
 }
 .proyectos .detalles {
 	grid-area: detalles;
@@ -334,6 +361,7 @@ h1 {
 
 .educacion ol {
 	list-style: none;
+	padding: 20px 0 200px 0;
 }
 
 .educacion .logo {
@@ -350,6 +378,7 @@ h1 {
 	background: var(--beige);
 	margin: auto;
 	flex-grow: 1;
+	z-index: -1;
 }
 .educacion li:last-child .logo::after {
 	display: none;
@@ -399,15 +428,14 @@ h1 {
 
 /* -- -- experiencia -- -- */
 
-.experiencia h2 {
-	padding: 0 20px;
-}
-
-.experiencia ol {
+.experiencia {
 	width: 80%;
 	max-width: 860px;
 	margin: auto;
-	padding-right: 20px;
+}
+
+.experiencia ol {
+	padding: 20px 20px 200px 0;
 	list-style: none;
 	display: flex;
 	flex-flow: column;
@@ -473,15 +501,12 @@ h1 {
 	margin: auto;
 }
 
-.referencias h2 {
-	margin-bottom: 90px;
-}
-
 .referencias ul {
 	list-style: none;
 	display: flex;
 	flex-flow: column;
 	gap: 80px;
+	padding: 90px 0 100px 0;
 }
 
 .referencias img {
@@ -633,7 +658,7 @@ h1 {
 		margin: 0 0 13px 0;
 	}
 	.experiencia ol {
-		padding: 0 0 0 30px;
+		padding: 0 0 200px 30px;
 	}
 }
 

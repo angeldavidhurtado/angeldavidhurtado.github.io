@@ -541,12 +541,11 @@ h1 {
 	background: linear-gradient(to top right, #122f5a, #1b68c5);
 	position: relative;
 	z-index: 0;
-	height: 100vh;
-	min-height: fit-content;
+	min-height: 100vh;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	padding: 0 30px;
+	padding: 100px 30px;
 }
 .contacto::before {
 	content: "";
@@ -569,7 +568,7 @@ h1 {
 	text-align: center;
 }
 
-.contacto ol {
+.contacto > ol {
 	list-style: none;
 	width: fit-content;
 	margin: 40px auto 0 auto;
@@ -686,4 +685,19 @@ h1 {
 	.experiencia ol {
 		padding-left: 5px;
 	}
+}
+
+
+
+
+/* -- -- responsive contacto -- -- */
+
+@media screen and (max-width: 472px) {
+	.contacto > ol {width: 358px;}
+}
+@media screen and (max-width: 414px) {
+	.contacto > ol {width: 278px;}
+}
+@media screen and (max-width: 335px) {
+	.contacto > ol {width: 246px;}
 }

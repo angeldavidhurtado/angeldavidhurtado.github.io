@@ -13,8 +13,9 @@
 }
 
 body {
-	font-family: "Poppins", serif;
+	background: var(--brown);
 	color: var(--beige);
+	font-family: "Poppins", serif;
 }
 
 p {
@@ -733,8 +734,13 @@ h1 {
 
 /* -- -- scroll - webkit -- -- */
 
+::-webkit-scrollbar-corner {
+	background: var(--brown);
+}
+
 body::-webkit-scrollbar {
   width: 7px;
+	height: 7px;
 	background: var(--brown);
 }
 

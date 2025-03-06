@@ -221,6 +221,7 @@ hacia abajo
 	border-radius: 50%;
 	box-shadow: var(--beige) 0 0 30px;
 }
+
 .foto-perfil img {
 	display: block;
 	border-radius: 50%;
@@ -700,4 +701,29 @@ h1 {
 }
 @media screen and (max-width: 335px) {
 	.contacto > ol {width: 246px;}
+}
+
+
+
+
+/* -- -- estilos solo para firefox -- -- */
+@supports (-moz-appearance: none) {
+
+	/* esta suele ser firefox movil */
+	@supports (backdrop-filter: blur(10px)) and (backdrop-filter: brightness(.8)) {
+
+		.navegacion .lang,
+		section > h2 {
+			text-shadow: none;
+			
+		}
+	
+		.hola,
+		.foto-perfil,
+		.proyectos .preview img {
+			box-shadow: none;
+		}
+
+	}
+
 }

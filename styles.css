@@ -74,7 +74,7 @@ img {
 
 .content-background section > h2 {
 	position: sticky;
-	top: 0;
+	top: 2px;
 }
 
 
@@ -726,4 +726,24 @@ h1 {
 
 	}
 
+}
+
+
+
+
+/* -- -- scroll - webkit -- -- */
+
+body::-webkit-scrollbar {
+  width: 7px;
+	background: var(--brown);
+}
+
+body::-webkit-scrollbar-thumb {
+	border: 2px solid var(--brown);
+  background: var(--beige-brown);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+	border: 1px solid var(--brown);
 }

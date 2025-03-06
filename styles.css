@@ -545,7 +545,7 @@ h1 {
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	padding: 50px 30px;
+	padding: 100px 30px;
 }
 .contacto::before {
 	content: "";

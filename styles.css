@@ -734,17 +734,17 @@ h1 {
 }
 
 .scroll-container::-webkit-scrollbar {
-  width: 7px;
-	height: 7px;
+  width: 10px;
+	height: 10px;
 	background: var(--brown);
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-	border: 2px solid var(--brown);
+	border: 3px solid var(--brown);
   background: var(--beige-brown);
   border-radius: 5px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
-	border: 1px solid var(--brown);
+	border: 2px solid var(--brown);
 }

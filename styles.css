@@ -18,23 +18,6 @@ body {
 	font-family: "Poppins", serif;
 }
 
-/*
- *
- * la unica desventaja es que no se ocultan las barras del navegador
- * aunque se puede hacer paralax en movil porque al mantener las barras del
- * navegador siempre visibles "supongo" que no marea la vista (aunque aun
- * no lo he probado
- *
- * funciona bien en escitorio, movil, movil con ver como escritorio
- * funciona bien en escritorio con varias pantallas
- * facil de implementar
- * background con movimiento "exacto" cuando llega a la seccion contacto
- * se que mi portafolio lo habran donde lo habran si se va a ver bien
- * es funcional y exacto sin utilizar tolerancias
- * seria interesante comentar sobre las tolerancias a los dev de chromium
- * esta solucion creo que tambien funcionara bien en iphone y safari
- *
- */
 .scroll-container {
 	height: 100svh;
 	overflow-y: scroll;
@@ -105,22 +88,10 @@ img {
 
 /* -- -- background -- -- */
 
-/*
-en background-resize.js esta
-la funcion heightBackgroundHandler()
-que se encarga de manejar la altura
-de .backgfroun y asignar un margin-top
-negativo al body para visualizar
-correctamente el fondo con display sticky
-y que funcione bien en movil al ocultarse
-barras del navegador cuando se hace scroll
-hacia abajo
-*/
-
 .content-background {
 	position: relative;
 	z-index: 0;
-	margin-top: -100svh; /* svh */
+	margin-top: -100svh;
 }
 
 .background {
@@ -128,7 +99,7 @@ hacia abajo
 	top: 0;
 	z-index: -1;
 	width: 100%;
-	height: 100svh; /* svh */
+	height: 100svh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -290,7 +261,7 @@ h1 {
 
 
 
-/* -- -- Proyectos -- -- */
+/* -- -- proyectos -- -- */
 
 .proyectos {
 	max-width: 860px;
@@ -377,7 +348,7 @@ h1 {
 
 
 
-/* -- -- Educación -- -- */
+/* -- -- educacion -- -- */
 
 .educacion {
 	max-width: 600px;
@@ -561,7 +532,7 @@ h1 {
 
 
 
-/* -- -- referencias -- -- */
+/* -- -- contacto -- -- */
 
 .contacto {
 	background: linear-gradient(to top right, #122f5a, #1b68c5);
@@ -756,7 +727,7 @@ h1 {
 
 
 
-/* -- -- scroll - webkit -- -- */
+/* -- -- scroll webkit -- -- */
 
 .scroll-container::-webkit-scrollbar-corner {
 	background: var(--brown);

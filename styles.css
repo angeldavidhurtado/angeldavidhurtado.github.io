@@ -19,7 +19,7 @@ body {
 }
 
 .scroll-container {
-	height: 100svh;
+	height: calc(100svh - 1px); /* previene ocultar las barras del navegador en chrome movil y asi poder tener el fondo de 100vsh */
 	overflow-y: scroll;
 }
 
@@ -711,7 +711,6 @@ h1 {
 		.navegacion .lang,
 		section > h2 {
 			text-shadow: none;
-			
 		}
 	
 		.hola,

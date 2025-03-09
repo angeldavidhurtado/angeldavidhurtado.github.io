@@ -18,11 +18,6 @@ body {
 	font-family: "Poppins", serif;
 }
 
-.scroll-container {
-	height: calc(100svh - 1px); /* previene ocultar las barras del navegador en chrome movil y asi poder tener el fondo de 100vsh */
-	overflow-y: scroll;
-}
-
 p {
 	font-size: 18px;
 }
@@ -91,7 +86,6 @@ img {
 .content-background {
 	position: relative;
 	z-index: 0;
-	margin-top: -100svh;
 }
 
 .background {
@@ -744,22 +738,22 @@ h1 {
 
 /* -- -- scroll webkit -- -- */
 
-.scroll-container::-webkit-scrollbar-corner {
+body::-webkit-scrollbar-corner {
 	background: var(--brown);
 }
 
-.scroll-container::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 10px;
 	height: 10px;
 	background: var(--brown);
 }
 
-.scroll-container::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
 	border: 3px solid var(--brown);
   background: var(--beige-brown);
   border-radius: 5px;
 }
 
-.scroll-container::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
 	border: 2px solid var(--brown);
 }

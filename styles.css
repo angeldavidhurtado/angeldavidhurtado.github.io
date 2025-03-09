@@ -205,8 +205,7 @@ img {
 }
 
 .hola-padding {
-	padding-top: calc(102px + 60px);
-	padding-bottom: 200px;
+	padding: calc(102px + 60px) 0 200px 0;
 }
 
 .foto-perfil {
@@ -538,11 +537,11 @@ h1 {
 	background: linear-gradient(to top right, #122f5a, #1b68c5);
 	position: relative;
 	z-index: 0;
-	min-height: 100vh;
+	min-height: 100svh;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	padding: 100px 30px;
+	padding: 50px 30px;
 }
 .contacto::before {
 	content: "";
@@ -670,12 +669,29 @@ h1 {
 	}
 
 	/* -- -- hola -- -- */
+	.hola {
+		border-radius: 30px;
+		border: 7px solid var(--beige);
+	}
+	.hola-padding {
+		padding: calc(81px + 60px) 0 100px 0;
+	}
+	.hola .foto-perfil {
+		max-width: 120px;
+		margin-top: -84px;
+		padding: 6px;
+	}
 	.hola h1 {
-		font-size: 28px;
+		font-size: 26px;
+	}
+	.hola h2 {
+		font-size: 22px;
 	}
 	.hola p {
-		width: 85%;
+		width: 95%;
+		padding-left: 0px;
 		margin-bottom: 23px;
+		font-size: 18px;
 	}
 
 	/* -- -- experiencia -- -- */

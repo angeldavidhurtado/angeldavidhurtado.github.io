@@ -11,7 +11,6 @@
 		*/
 		bgContent.style.height = `${height}px`
 		bgContent.style.marginTop = `-${height}px`
-		console.log(bgContent)
 	}
 
 	window.addEventListener('load', setBackroundHeight)

@@ -1,0 +1,61 @@
+/* -- partciles -- */
+
+.left_particles,
+.right_particles {
+	position: fixed;
+	z-index: 1;
+	top: 100px;
+	width: calc(50svw - 600px);
+	height: 85svh;
+}
+
+.left_particles { left: 50px; }
+.right_particles { right: 50px; }
+
+/* -- particle -- */
+
+.left_particles > *,
+.right_particles > * {
+	position: absolute;
+	border-radius: 50%;
+	background-color: #8EA7CD;
+	opacity: 0;
+	filter: blur(6px);
+	font-size: 1px;
+}
+
+@keyframes right100 {
+	0% { opacity: 0; }
+	20%, 80% { opacity: .7; }
+	to {
+		transform: translate(100px, -200px);
+		opacity: 0;
+	}
+}
+
+@keyframes right30 {
+	0% { opacity: 0; }
+	20%, 80% { opacity: .7; }
+	to {
+		transform: translate(30px, -200px);
+		opacity: 0;
+	}
+}
+
+@keyframes left30 {
+	0% { opacity: 0; }
+	20%, 80% { opacity: .7; }
+	to {
+		transform: translate(-30px, -200px);
+		opacity: 0;
+	}
+}
+
+@keyframes left100 {
+	0% { opacity: 0; }
+	20%, 80% { opacity: .7; }
+	to {
+		transform: translate(-100px, -200px);
+		opacity: 0;
+	}
+}

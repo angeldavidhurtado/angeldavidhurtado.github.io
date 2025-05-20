@@ -17,11 +17,9 @@
 .left_particles > *,
 .right_particles > * {
 	position: absolute;
-	border-radius: 50%;
-	background-color: #8EA7CD;
 	opacity: 0;
-	filter: blur(6px);
 	font-size: 1px;
+	overflow: visible;
 }
 
 @keyframes right100 {

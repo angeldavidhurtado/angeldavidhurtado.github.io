@@ -3,7 +3,7 @@ class Particles {
 		amountParticles = 3,
 		min_size = 40,
 		max_size = 60,
-		interval = 7
+		interval = 21
 	) {
 		this.min = min_size - 1
 		this.range = max_size - min_size + 1
@@ -50,6 +50,9 @@ class Particles {
 
 	createParticle(particleContainer) {
 		const particle = document.createElement('div')
+		const img = document.createElement('img')
+		img.src = './js/particles/img/css.png'
+		particle.appendChild(img)
 		particle.className = 'particle'
 		particle.style.animation = this.animation
 		particleContainer.appendChild(particle)

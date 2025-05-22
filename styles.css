@@ -222,6 +222,8 @@ h1 {
 	font-size: 32px;
 	font-weight: 400;
 }
+h1 strong { font-weight: 400; }
+h1 em { font-style: normal; }
 
 .hola h2 {
 	font-family: "Poppins";

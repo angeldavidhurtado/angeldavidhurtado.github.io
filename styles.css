@@ -297,7 +297,7 @@ h1 em { font-style: normal; }
 }
 .proyectos .detalles {
 	grid-area: detalles;
-	padding: 10px 30px 0 3px;
+	padding: 10px 30px 0 1px;
 }
 
 .proyectos .item-ico img {

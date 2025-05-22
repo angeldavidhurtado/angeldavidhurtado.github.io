@@ -285,6 +285,8 @@ h1 em { font-style: normal; }
 }
 
 .proyectos .preview {
+	margin-top: 16px;
+	height: fit-content;
 	grid-area: preview;
 	justify-self: center;
 }
@@ -306,7 +308,7 @@ h1 em { font-style: normal; }
 }
 
 .proyectos .preview img {
-	margin-top: 16px;
+	vertical-align: top;
 	border-radius: 15px;
 	border: 5px solid var(--beige);
 	box-shadow: var(--beige) 0 0 30px;

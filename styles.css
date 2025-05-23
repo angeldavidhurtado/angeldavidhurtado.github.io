@@ -33,7 +33,7 @@ section > h2 {
 	text-align: center;
 	text-shadow: var(--beige) 0 0 10px;
 	font-size: 28px;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 }
 .content-background section:last-child > h2 {
 	margin-bottom: 0;
@@ -58,6 +58,7 @@ img {
 
 .difuso {
 	position: sticky;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -79,6 +80,7 @@ img {
 
 .content-background section > h2 {
 	position: sticky;
+	z-index: 3;
 	top: 2px;
 }
 
@@ -128,6 +130,7 @@ img {
 
 .navegacion {
 	position: sticky;
+	z-index: 3;
 	top: 0;
 	padding: 15px 40px;
 }
@@ -203,7 +206,7 @@ img {
 }
 
 .hola-padding {
-	padding: calc(102px + 60px) 0 100px 0;
+	padding: calc(102px + 60px) 0 130px 0;
 }
 
 .foto-perfil {
@@ -285,7 +288,9 @@ h1 em { font-style: normal; }
 }
 
 .proyectos .preview {
-	margin-top: 16px;
+	position: sticky;
+	top: 100px;
+	margin: 16px 0 60px;
 	height: fit-content;
 	grid-area: preview;
 	justify-self: center;

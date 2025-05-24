@@ -158,7 +158,8 @@ img {
 	font-weight: 300;
 	transition: text-shadow ease .3s;
 }
-.navegacion ol a:hover {
+.navegacion ol a:hover,
+.text-shadow {
 	text-shadow: var(--beige) 0 0 10px;
 }
 

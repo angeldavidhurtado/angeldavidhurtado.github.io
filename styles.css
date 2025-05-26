@@ -307,6 +307,11 @@ h1 em { font-style: normal; }
 	grid-area: detalles;
 	padding: 10px 30px 0 1px;
 }
+.proyectos .detalles .descripcion {
+	display: flex;
+	flex-flow: column;
+	gap: 6px;
+}
 
 .proyectos .item-ico img {
 	width: 32px;

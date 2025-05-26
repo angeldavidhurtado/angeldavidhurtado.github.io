@@ -292,6 +292,9 @@ h1 em { font-style: normal; }
 	position: sticky;
 	top: 100px;
 	margin: 16px 0 60px;
+	border-radius: 15px;
+	border: 5px solid var(--beige);
+	overflow: hidden;
 	height: fit-content;
 	grid-area: preview;
 	justify-self: center;
@@ -320,8 +323,6 @@ h1 em { font-style: normal; }
 
 .proyectos .preview img {
 	vertical-align: top;
-	border-radius: 15px;
-	border: 5px solid var(--beige);
 	box-shadow: var(--beige) 0 0 30px;
 }
 

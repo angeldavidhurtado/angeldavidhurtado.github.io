@@ -339,6 +339,9 @@ h1 em { font-style: normal; }
 	user-select: none;
 }
 
+.proyectos .enlaces a:first-child {
+	margin-right: 5px;
+}
 .proyectos .enlaces a {
 	text-decoration: none;
 	color: var(--beige);

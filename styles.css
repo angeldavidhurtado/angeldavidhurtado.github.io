@@ -479,12 +479,15 @@ h1 em { font-style: normal; }
 	font-size: 20px;
 }
 
-.experiencia ul:nth-child(2) {
+.experiencia .descripcion > p {
+	padding-top: 10px;
+}
+.experiencia ul:nth-child(3) {
 	list-style: disc;
-	padding: 10px 0 18px 19px;
+	padding: 2px 0 18px 19px;
 }
 
-.experiencia ul:nth-child(2) li::marker {
+.experiencia ul:nth-child(3) li::marker {
 	font-size: 20px;
 }
 

@@ -398,15 +398,19 @@ h1 em { font-style: normal; }
 	display: none;
 }
 
-.educacion img {
-	box-sizing: content-box;
+.educacion .img {
 	border-radius: 100%;
 	border: 1px solid var(--beige);
+	margin-top: 10px;
+}
+
+.educacion img {
+	box-sizing: content-box;
 	width: 100%;
 	max-width: 35px;
 	max-height: 35px;
 	padding: 12px;
-	margin-top: 10px;
+	
 	vertical-align: top;
 }
 

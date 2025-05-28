@@ -222,7 +222,6 @@ img {
 .foto-perfil img {
 	display: block;
 	border-radius: 50%;
-	width: 100%;
 	max-width: 156px;
 }
 
@@ -664,11 +663,11 @@ h1 em { font-style: normal; }
 	}
 	.proyectos .preview {
 		position: static;
-		margin-bottom: 0;
+		margin-bottom: 20px;
 	}
 	.proyectos .preview img {
-		margin: 0 0 20px 0;
 		width: 100%;
+		height: auto;
 	}
 	.proyectos .detalles {
 		padding-right: 0;
@@ -705,7 +704,6 @@ h1 em { font-style: normal; }
 		padding: calc(81px + 60px) 0 100px 0;
 	}
 	.hola .foto-perfil {
-		max-width: 120px;
 		margin-top: -84px;
 		padding: 6px;
 	}

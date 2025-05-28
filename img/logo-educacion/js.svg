@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="61.000351"
+   height="61"
+   viewBox="0 0 61.000352 61"
+   fill="none"
+   version="1.1"
+   id="svg9"
+   sodipodi:docname="js.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1"
+     inkscape:cx="5.5"
+     inkscape:cy="4.5"
+     inkscape:window-width="1280"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg9" />
+  <path
+     id="rect1"
+     style="fill:#f1e3c4;fill-opacity:1;stroke-width:33.8619;stroke-linejoin:round;paint-order:fill markers stroke"
+     d="m 46.080253,8.8447295 v 0.0039 c -7.767134,0 -12.742188,4.9661675 -12.742188,11.4902335 0,7.08028 4.1727,10.430924 10.449219,13.103516 l 2.169922,0.931641 c 3.966972,1.735079 6.335938,2.789303 6.335938,5.771484 0,2.488938 -2.304276,4.292969 -5.908203,4.292969 -4.290084,0 -6.717857,-2.237845 -8.582032,-5.28125 l -7.0625,4.105469 c 2.553224,5.044347 7.76851,8.892578 15.845703,8.892578 8.261378,6e-6 14.414063,-4.290457 14.414063,-12.121088 0,-7.263936 -4.174357,-10.495327 -11.564453,-13.664063 l -2.173828,-0.929687 c -3.731943,-1.61614 -5.34375,-2.677484 -5.34375,-5.28711 0,-2.109397 1.614921,-3.724609 4.162109,-3.724609 2.49763,0 4.102589,1.052006 5.59375,3.724609 l 6.773438,-4.345703 C 55.582789,10.768521 51.610197,8.8447295 46.080253,8.8447295 Z M 17.336112,9.3427765 V 38.915041 c 0,4.344718 -1.798957,5.466797 -4.65625,5.466797 -2.9882355,0 -4.2333375,-2.050383 -5.5996085,-4.474609 L 1.7547607e-4,44.192385 C 2.0514325,48.532445 6.0877685,52.137698 13.050956,52.137698 c 7.707155,0 12.984375,-4.09693 12.984375,-13.103516 V 9.3427765 Z" />
+</svg>

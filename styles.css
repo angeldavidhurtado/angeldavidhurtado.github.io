@@ -221,6 +221,8 @@ img {
 
 .foto-perfil img {
 	display: block;
+	width: 100%;
+	height: auto;
 	border-radius: 50%;
 	max-width: 156px;
 }
@@ -704,6 +706,7 @@ h1 em { font-style: normal; }
 		padding: calc(81px + 60px) 0 100px 0;
 	}
 	.hola .foto-perfil {
+		max-width: 120px;
 		margin-top: -84px;
 		padding: 6px;
 	}

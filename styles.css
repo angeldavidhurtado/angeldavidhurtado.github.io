@@ -37,7 +37,6 @@ section > h2 {
 	text-align: center;
 	text-shadow: var(--beige) 0 0 10px;
 	font-size: 28px;
-	margin-bottom: 60px;
 	padding-top: 100px;
 }
 .content-background section:last-child > h2 {

@@ -699,11 +699,17 @@ h1 em { font-style: normal; }
 
 @media screen and (max-width: 750px) {
 	/* -- -- navegacion -- -- */
-	.navegacion nav {
+	.navegacion .lang,
+	.navegacion .cv {
 		display: none;
 	}
 	.navegacion .cv a {
 		width: 100px;
+	}
+
+	.navegacion nav {
+		margin: auto;
+		padding-top: 5px;
 	}
 
 	/* -- -- hola -- -- */
@@ -738,7 +744,23 @@ h1 em { font-style: normal; }
 	}
 }
 
+@media screen and (max-width: 510px) {
+	#nav-contact {
+		display: none;
+	}
+}
 
+@media screen and (max-width: 405px) {
+	.navegacion {
+		padding: 15px 10px;
+	}
+	.navegacion a {
+		font-size: 14px;
+	}
+	.navegacion ol {
+		gap: 18px;
+	}
+}
 
 
 /* -- -- responsive contacto -- -- */

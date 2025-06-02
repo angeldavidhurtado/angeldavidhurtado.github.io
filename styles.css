@@ -587,7 +587,7 @@ h1 em { font-style: normal; }
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
-	padding: 65px 30px 80px;
+	padding: 0px 30px 80px;
 }
 .contacto::before {
 	content: "";
@@ -603,6 +603,7 @@ h1 em { font-style: normal; }
 
 .contacto h2 {
 	margin: 0;
+	padding-bottom: 0;
 }
 .contacto h3 {
 	font-family: poppins;

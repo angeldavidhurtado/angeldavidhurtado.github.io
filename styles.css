@@ -35,7 +35,7 @@ section > h2 {
 	text-align: center;
 	text-shadow: var(--beige) 0 0 10px;
 	font-size: 28px;
-	padding-top: 100px;
+	padding: 140px 0 40px;
 }
 .content-background section:last-child > h2 {
 	margin-bottom: 0;
@@ -400,7 +400,7 @@ h1 em { font-style: normal; }
 
 .educacion ol {
 	list-style: none;
-	padding: 20px 0 200px 0;
+	padding: 20px 0 40px 0;
 }
 
 .educacion .logo {
@@ -475,7 +475,7 @@ h1 em { font-style: normal; }
 }
 
 .experiencia ol {
-	padding: 20px 20px 200px 0;
+	padding: 20px 20px 80px 0;
 	list-style: none;
 	display: flex;
 	flex-flow: column;

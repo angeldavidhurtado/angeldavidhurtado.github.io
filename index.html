@@ -59,7 +59,7 @@
 		<div class="background">
 			<img src="./img/bg.webp" alt="" width="1280" height="720">
 		</div>
-		<section class="inicio">
+		<section class="inicio" id="inicio">
 			<div class="hola-padding">
 				<div class="hola">
 					<div class="foto-perfil">
@@ -601,4 +601,45 @@
 		</ol>
 	</section>
 </body>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const sections = Array.from(document.getElementsByTagName('section'))
+		const navLinks = document.querySelectorAll('nav a')
+
+		const removeActiveClass = () => {
+			navLinks.forEach(link =>
+				link.classList.remove('active')
+			)
+		}
+
+		const observerOptions = {
+			root: null,
+			rootMargin: '-9% 0px -90%',
+			threshold: 0
+		}
+
+		const observerCallback = (entries, observer) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					removeActiveClass()
+					const entryId = `#${entry.target.id}`
+					navLinks.forEach(link => {
+						if (link.hash == entryId)
+							return link.classList.add('active')
+					})
+				}
+			})
+		}
+
+		const observer = new IntersectionObserver(
+			observerCallback,
+			observerOptions
+		)
+
+		sections.forEach(section => {
+			observer.observe(section)
+		})
+	})
+</script>
 </html>

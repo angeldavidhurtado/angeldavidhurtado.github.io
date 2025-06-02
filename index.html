@@ -606,6 +606,7 @@
 	document.addEventListener('DOMContentLoaded', function() {
 		const sections = Array.from(document.getElementsByTagName('section'))
 		const navLinks = document.querySelectorAll('nav a')
+		const nav = document.getElementsByClassName('difuso')[0]
 
 		const removeActiveClass = () => {
 			navLinks.forEach(link =>
@@ -624,6 +625,9 @@
 				if (entry.isIntersecting) {
 					removeActiveClass()
 					const entryId = `#${entry.target.id}`
+					entryId == '#contacto'
+						? nav.classList.add('blue')
+						: nav.classList.remove('blue')
 					navLinks.forEach(link => {
 						if (link.hash == entryId)
 							return link.classList.add('active')

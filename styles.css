@@ -4,6 +4,8 @@
 	--brown: #433126;
 	--brown-transparent: #4331266c;
 	--blue-gradient: linear-gradient(to top right, #122f5a, #1b68c5);
+	--dark-blue: #122f5a;
+	--dark-blue-transparent: #122f5a6c;
 }
 
 * {
@@ -80,6 +82,11 @@ img {
   .difuso {
 		background: #433126c0;
 	}
+}
+
+.difuso.blue {
+	background: var(--dark-blue-transparent);
+	box-shadow: 0 0 30px var(--dark-blue);
 }
 
 /*

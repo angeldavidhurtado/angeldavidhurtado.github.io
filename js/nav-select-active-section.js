@@ -3,6 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
 	const navLinks = document.querySelectorAll('nav a')
 	const nav = document.getElementsByClassName('difuso')[0]
 
+	navLinks.forEach(link => link.addEventListener('click', e => {
+		e.preventDefault()
+		sections.forEach(section => {
+			const navId = e.target.hash
+			const sectionId = `#${section.id}`
+			if (navId == sectionId)
+				return section.scrollIntoView({behavior: 'smooth'})
+		})
+	}))
+
 	const removeActiveClass = () => {
 		navLinks.forEach(link =>
 			link.classList.remove('active')
@@ -23,9 +33,11 @@ document.addEventListener('DOMContentLoaded', function() {
 				entryId == '#contacto'
 					? nav.classList.add('blue')
 					: nav.classList.remove('blue')
+
 				navLinks.forEach(link => {
-					if (link.hash == entryId)
+					if (link.hash == entryId) {
 						return link.classList.add('active')
+					}
 				})
 			}
 		})

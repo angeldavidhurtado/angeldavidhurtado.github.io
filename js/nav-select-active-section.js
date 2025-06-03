@@ -2,16 +2,22 @@ document.addEventListener('DOMContentLoaded', function() {
 	const sections = Array.from(document.getElementsByTagName('section'))
 	const navLinks = document.querySelectorAll('nav a')
 	const nav = document.getElementsByClassName('difuso')[0]
+	const angel = document.getElementsByClassName('lang')[0]
 
-	navLinks.forEach(link => link.addEventListener('click', e => {
+	const goToSection = e => {
 		e.preventDefault()
 		sections.forEach(section => {
-			const navId = e.target.hash
+			const navId = e.target.hash ? e.target.hash : '#inicio'
 			const sectionId = `#${section.id}`
 			if (navId == sectionId)
 				return section.scrollIntoView({behavior: 'smooth'})
 		})
-	}))
+	}
+
+	angel.addEventListener('click', goToSection)
+	navLinks.forEach(link =>
+		link.addEventListener('click', goToSection)
+	)
 
 	const removeActiveClass = () => {
 		navLinks.forEach(link =>

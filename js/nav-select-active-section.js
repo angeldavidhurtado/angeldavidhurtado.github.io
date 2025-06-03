@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	const observerOptions = {
 		root: null,
-		rootMargin: '-9% 0px -90%',
+		rootMargin: '-6% 0px -93%',
 		threshold: 0
 	}
 

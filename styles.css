@@ -70,6 +70,10 @@ img {
 	backdrop-filter: blur(27px) brightness(.8);
 	box-shadow: 0 0 30px var(--brown);
 }
+.difuso.blue {
+	background: var(--dark-blue-transparent);
+	box-shadow: 0 0 30px var(--dark-blue);
+}
 @supports not (
 	(backdrop-filter: blur(10px))
 	and
@@ -78,11 +82,9 @@ img {
   .difuso {
 		background: #433126c0;
 	}
-}
-
-.difuso.blue {
-	background: var(--dark-blue-transparent);
-	box-shadow: 0 0 30px var(--dark-blue);
+	.difuso.blue {
+		background: #122f5ac0;
+	}
 }
 
 /*
@@ -818,8 +820,14 @@ h1 em { font-style: normal; }
 	
 		.hola,
 		.foto-perfil,
-		.proyectos .preview img {
+		.proyectos .preview {
 			box-shadow: none;
+		}
+
+		.navegacion ol a:hover,
+		.text-shadow:hover,
+		.navegacion a.active {
+			text-shadow: none;
 		}
 
 	}

@@ -537,6 +537,29 @@ h1 em { font-style: normal; }
 
 
 
+/* -- -- sobre mi -- -- */
+
+.sobre-mi {
+	width: 80%;
+	max-width: 860px;
+	margin: auto;
+	padding-bottom: 80px;
+}
+/*
+.sobre-mi h2 {
+	padding-bottom: 50px;
+}
+*/
+.sobre-mi article {
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+	padding-left: 15px;
+}
+
+
+
+
 /* -- -- referencias -- -- */
 
 .referencias {
@@ -757,6 +780,11 @@ h1 em { font-style: normal; }
 	/* -- -- experiencia -- -- */
 	.experiencia ol {
 		padding-left: 5px;
+	}
+
+	/* -- -- sobre mi -- -- */
+	.sobre-mi article {
+		padding-left: 0;
 	}
 }
 

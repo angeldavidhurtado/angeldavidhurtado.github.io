@@ -1,0 +1,8 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>Ángel David Hurtado</ShortName>
+	<Description>Search Ángel David Hurtado</Description>
+	<InputEncoding>UTF-8</InputEncoding>
+	<image width="16" height="16" type="image/x-icon">https://angeldavidhurtado.github.io/favicon.ico</image>
+	<Url type="text/html" method="get" template="https://angeldavidhurtado.github.io/?q={searchTerms}"/>
+	<moz:SearchForm>https://angeldavidhurtado.github.io/search/</moz:SearchForm>
+</OpenSearchDescription>

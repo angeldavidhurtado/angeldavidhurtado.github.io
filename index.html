@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<title>Ángel David Hurtado</title>
+	<link rel="canonical" href="https://angeldavidhurtado.github.io/">
 	<meta name="title" content="Ángel David Hurtado">
 	<meta name="image" content="https://angeldavidhurtado.github.io/img/social-media-banner.jpg">
 	<link rel="icon" type="image/x-icon" href="https://angeldavidhurtado.github.io/favicon.ico">
@@ -33,44 +34,47 @@
 	<link rel="manifest" href="/manifest.json">
 	<link rel="search" type="application/opensearchdescription+xml" href="/all/search/opensearch.xml" title="Ángel David Hurtado">
 	<meta name="description" content="Portafolio de Ángel, frontend developer especializado en React, JavaScript, HTML y CSS.">
+	<meta itemprop="name" content="Ángel David Hurtado">
+	<meta itemprop="description" content="Portafolio de Ángel, frontend developer especializado en React, JavaScript, HTML y CSS.">
+	<link itemprop="url" href="https://angeldavidhurtado.github.io/">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<meta name="application-name" content="Ángel David Hurtado" />
 	<meta name="keywords" content="Ángel David Hurtado, angel david hurtado, Frontend Developer, JavaScript, HTML5, CSS3, Git, Portfolio, Portafolio, Desarrollo Web, Programador Web, Web Developer">
 
 	<script type="application/ld+json">
 		{
-			"@context": "https://schema.org",
-			"@type": "WebSite",
-			"url": "https://angeldavidhurtado.github.io",
-			"name": "Ángel David Hurtado",
-			"publisher": {
-				"@type": "Person",
-				"name": "Ángel David Hurtado",
-				"url": "https://angeldavidhurtado.github.io"
-			}
-		}
-
-		{
-			"@context": "https://schema.org",
-			"@type": "ProfilePage",
-			"url": "https://angeldavidhurtado.github.io",
-			"name": "Ángel David Hurtado",
-			"description": "Portafolio de Ángel, frontend developer especializado en React, JavaScript, HTML y CSS.",
-			"mainEntity": {
-				"@type": "Person",
-				"name": "Ángel David Hurtado",
-				"url": "https://angeldavidhurtado.github.io",
-				"jobTitle": "Frontend Developer",
-				"sameAs": [
-					"https://github.com/angeldavidhurtado",
-					"https://www.linkedin.com/in/angel-david-hurtado"
-				]
-			},
-			"publisher": {
-				"@type": "Person",
-				"name": "Ángel David Hurtado",
-				"url": "https://angeldavidhurtado.github.io"
-			}
+			"@context":  "https://schema.org",
+			"@graph": [
+				{
+					"@type": "WebSite",
+					"@id": "https://angeldavidhurtado.github.io/#website",
+					"url": "https://angeldavidhurtado.github.io/",
+					"name": "Ángel David Hurtado",
+					"description": "Portafolio de Ángel, frontend developer especializado en React, JavaScript, HTML y CSS.",
+					"publisher": {
+						"@type": "Person",
+						"name": "Ángel David Hurtado"
+					},
+					"potentialAction": {
+						"@type": "SearchAction",
+						"target": "https://angeldavidhurtado.github.io/?s={search_term_string}",
+						"query-input": "required name=search_term_string"
+					}
+				},
+				{
+					"@type": "BreadcrumbList",
+					"@id": "https://angeldavidhurtado.github.io/#breadcrumblist",
+					"itemListElement": [
+						{
+							"@type": "ListItem",
+							"position": 1,
+							"name": "Inicio",
+							"item": "https://angeldavidhurtado.github.io/"
+						}
+					]
+				}
+			]
 		}
 	</script>
 

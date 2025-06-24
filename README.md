@@ -1,4 +1,7 @@
-# Ángel David Hurtado – Frontend Developer
+<h1 align="center">Ángel David Hurtado</h1>
+<p align="center">Frontend Developer</p>
+
+<br>
 
 Hola, soy Ángel. Me especializo en desarrollo web con enfoque en **frontend con React y JavaScript moderno**, pero también manejo tecnologías de backend como Node.js, Express y bases de datos relacionales y no relacionales.  
 Me apasiona el código limpio, el diseño pixel perfect y construir experiencias accesibles, funcionales y pensadas para usuarios reales.

@@ -80,7 +80,7 @@ Mejoré el rendimiento aplicando delegación de eventos para renderizado eficien
 
 * [Portfolio](https://angeldavidhurtado.github.io/)
 * [Curriculum](https://angeldavidhurtado.github.io/%C3%81ngel%20David%20Hurtado%20-%20Frontend%20Developer.pdf)
-* [Email](https://mail.google.com/mail/?view=cm&fs=1&to=angeldavidhurtado.dev@gmail.com&su=Revisamos tu GitHub - Hablemos&body=Hola Ángel,%0D%0A%0D%0ASoy [tu nombre] de [nombre empresa]. Hemos revisado tu GitHub y nos gustaría [asunto])
+* <a href="https://mail.google.com/mail/?view=cm&fs=1&to=angeldavidhurtado.dev@gmail.com&su=Revisamos tu GitHub - Hablemos&body=Hola Ángel,%0D%0A%0D%0ASoy [tu nombre] de [nombre empresa]. Hemos revisado tu GitHub y nos gustaría [asunto]">Email</a>
 
 <br>
 

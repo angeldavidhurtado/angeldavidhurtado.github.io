@@ -1,3 +1,5 @@
+<br>
+
 <h1 align="center">Ángel David Hurtado</h1>
 <p align="center">Frontend Developer</p>
 
@@ -85,3 +87,5 @@ Mejoré el rendimiento aplicando delegación de eventos para renderizado eficien
 <br>
 
 > ¡Gracias por visitar mi portafolio! Estoy abierto a nuevas oportunidades, desafíos técnicos y proyectos donde pueda aportar con tecnología, creatividad y compromiso.
+
+<br>

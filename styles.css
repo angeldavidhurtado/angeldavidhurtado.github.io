@@ -21,7 +21,7 @@ body {
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 p a {
@@ -357,35 +357,31 @@ h1 em { font-style: normal; }
 	margin: 15px 0 5px -4px;
 	list-style: none;
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 	flex-wrap: wrap;
 }
 .proyectos .tecnologias li {
+	color: var(--beige);
+	background-color: var(--brown);
 	padding: 5px 15px;
-	background: var(--blue-gradient);
-	border-radius: 18px;
-	user-select: none;
+	display: inline-block;
+	border-radius: 22px;
+	transition: all ease .3s;
+	text-align: center;
 }
 
 .proyectos .enlaces a:first-child {
 	margin-right: 5px;
 }
 .proyectos .enlaces a {
-	text-decoration: none;
-	color: var(--beige);
-	font-size: 22px;
 	padding: 5px 20px;
-	border: 1px solid var(--beige);
-	display: inline-block;
-	user-select: none;
+	background: var(--blue-gradient);
 	border-radius: 22px;
-	transition: all ease .3s;
+	font-size: 18px;
+	color: var(--beige);
+	text-decoration: none;
 	margin-top: 10px;
-	text-align: center;
-}
-.proyectos .enlaces a:hover {
-	background: var(--beige);
-	color: var(--brown);
+	display: inline-block;
 }
 
 
@@ -489,12 +485,18 @@ h1 em { font-style: normal; }
 }
 
 .experiencia .fecha {
-	width: 145px;
+	width: 175px;
 	flex-shrink: 0;
 	font-size: 14px;
+	text-align: right;
+	padding-right: 20px;
 	color: var(--beige-brown);
 	font-weight: 500;
 	margin-top: 6px;
+}
+
+.experiencia .fecha span {
+	display: block;
 }
 
 .experiencia article {
@@ -510,7 +512,7 @@ h1 em { font-style: normal; }
 .experiencia .descripcion > p {
 	padding-top: 10px;
 }
-.experiencia ul:nth-child(3) {
+.experiencia ul:nth-child(4) {
 	list-style: disc;
 	padding: 2px 0 18px 19px;
 }
@@ -519,15 +521,17 @@ h1 em { font-style: normal; }
 	font-size: 20px;
 }
 
-.experiencia ul:last-child {
+.experiencia ul.skills {
 	list-style: none;
+	font-size: 14px;
 	margin-left: -5px;
 	display: flex;
 	gap: 7px;
 	flex-wrap: wrap;
+	padding: 11px 0 8px 0;
 }
 
-.experiencia ul:last-child li {
+.experiencia ul.skills li {
 	background: var(--brown);
 	padding: 5px 15px;
 	border-radius: 18px;
@@ -728,6 +732,14 @@ h1 em { font-style: normal; }
 	}
 	.experiencia .fecha {
 		margin: 0 0 13px 0;
+		width: 100%;
+		text-align: left;
+	}
+	.experiencia .fecha span {
+		display: inline;
+	}
+	.experiencia .fecha span:nth-child(2)::before {
+		content: " •  ";
 	}
 	.experiencia ol {
 		padding-right: 0;
